@@ -1,16 +1,17 @@
 qty = int(input('Введите количество монет '))
-orel = 0
-reshka = 0
+side1 = 0
+side2 = 0
 
 for i in range(qty):
     x = int(input('Орел(1) или решка(0)? '))
     if x == 1:
-        orel += 1
+        side1 += 1
     else:
-        reshka += 1
-if orel < reshka:
-    print(f'Переверните {orel} монет с орла на решку, их меньше всего')
-elif orel == reshka:
-    print(f'Количество орлов и решек одинаково, по {orel} штук')
+        side2 += 1
+
+if side1 < side2:
+    print(f'Переверните {side1} монет с орла на решку, их меньше всего')
+elif side1 == side2:
+    print(f'Количество орлов и решек одинаково, по {side1} штук')
 else:
-    print((f'Переверните {reshka} монет с решки на орла, их меньше всего'))            
+    print((f'Переверните {side2} монет с решки на орла, их меньше всего'))            
