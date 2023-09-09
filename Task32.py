@@ -2,6 +2,7 @@ from random import randint
 
 list_number = list(randint(-20, 21) for i in range(int(input('Введите размер списка: '))))
 print (list_number)
+
 list_min_max = []
 max_number = int(input('Введите верхний диапазон: '))
 min_number = int(input('Введите нижний диапазон: '))
